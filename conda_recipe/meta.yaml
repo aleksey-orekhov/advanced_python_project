@@ -23,12 +23,12 @@ test:
     imports:
         - advanced_python_project
 
-#	requires:
-#		- pytest
+    requires:
+        - pytest
 #	files:
 #		- test-data.txt
-#	commands:
-#		- pytest
+    commands:
+        - py.test
 
 about:
   home: https://anaconda.org/
