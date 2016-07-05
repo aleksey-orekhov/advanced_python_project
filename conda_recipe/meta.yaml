@@ -1,0 +1,38 @@
+
+package:
+  name: intermediate_python_project
+  version: {{ VERSION }}
+
+source:
+  git_url: https://github.com/aleksey-orekhov/advanced_python_project.git
+  git_rev: release/{{ VERSION }}
+
+  
+build:
+    number: {{ BUILD_NUMBER }}
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+
+test:
+	imports:
+		- advanced_python_project
+
+#	requires:
+#		- pytest
+#	files:
+#		- test-data.txt
+#	commands:
+#		- pytest
+
+about:
+  home: https://anaconda.org/
+  license_file: LICENSE
+  license: Creative Commons Attribution 4.0 International License.
+  summary: 'smallest packagable python project'
+
