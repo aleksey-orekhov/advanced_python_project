@@ -20,8 +20,8 @@ requirements:
     - python
 
 test:
-	imports:
-		- advanced_python_project
+    imports:
+        - advanced_python_project
 
 #	requires:
 #		- pytest
